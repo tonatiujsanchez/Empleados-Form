@@ -43,4 +43,4 @@ const routes: Routes = [
         RouterModule
     ]
 })
-class EmpleadosRoutingModule{}
+export class EmpleadosRoutingModule{}

@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/pages/login/login.component';
-import { HomeComponent } from './empleados/pages/home/home.component';
-import { RegisterComponent } from './auth/pages/register/register.component';
 
 const routes: Routes = [
   {
-    path:'', pathMatch:'full', redirectTo: 'auth'
+    path:'', pathMatch:'full', redirectTo: 'empleados'
   },
   {
     path: 'auth',
@@ -18,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'auth'
+    loadChildren: ()=> import( './not-found/not-found.module' ).then( m=> m.NotFoundModule )
   }
 ];
 

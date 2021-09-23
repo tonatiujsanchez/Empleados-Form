@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListadoEmpleadosComponent } from './pages/listado-empleados/listado-empleados.component';
 import { EmpleadoComponent } from './pages/empleado/empleado.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
+import { EmpleadosRoutingModule } from './empleados-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
     AgregarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    EmpleadosRoutingModule
   ]
 })
 export class EmpleadosModule { }
