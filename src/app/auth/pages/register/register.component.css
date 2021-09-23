@@ -1,0 +1,14 @@
+.imagen{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 58, 167, 0.8), rgba(0, 58, 167, 0.8) ), url('../../../../assets/img/bg-auth.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario{
+    height: 100vh;
+}
+.form-container{
+    min-width: 400px;
+    padding: 60px 40px;
+}

@@ -1,3 +1,29 @@
-<p>login works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center formulario">
+            <div class="form-container border">
+                <h2 class="mb-4 fs-3 text-center display-3">INICIAR SESIÓN</h2>
 
-<button class="btn btn-secondary" routerLink="/empleados">Ir a empleados</button>
+                <form class="form-content" [formGroup]="formAuth" (ngSubmit)="ingresar()">
+                    <div class="form-group mb-3">
+                        <label for="inputEmail">Email</label>
+                        <input type="text" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="inputPassword">Password</label>
+                        <input type="text" class="form-control" id="inputPassword">
+                    </div>
+                    <div class="form-group d-grid">
+                        <input type="submit" value="Iniciar sesión" class="btn btn-primary">
+                    </div>
+                </form>
+                <div class="mt-4 text-center">
+                    <a routerLink="/auth/register" class="text-decoration-none lead fs-6">Crearme una cuenta</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-none d-md-flex align-items-center justify-content-center imagen">
+            <h2 class="text-white text-center text-uppercase fs-1 display-1">Empleados <br> Form</h2>
+        </div>
+    </div>
+</div>
