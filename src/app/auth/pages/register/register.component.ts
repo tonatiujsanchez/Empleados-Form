@@ -13,8 +13,10 @@ export class RegisterComponent implements OnInit {
     private router: Router
   ) { 
     this.formAuth = new FormGroup({
+      nombre: new FormControl('',[]),
       email: new FormControl('',[]),
-      pasword: new FormControl('',[])
+      pasword: new FormControl('',[]),
+      repitePassword: new FormControl('',[])
     });
   }
 

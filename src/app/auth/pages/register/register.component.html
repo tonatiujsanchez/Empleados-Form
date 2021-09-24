@@ -1,25 +1,25 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center formulario">
-            <div class="form-container border">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center bg-light formulario">
+            <div class="form-container bg-body shadow-lg">
                 <h2 class="mb-4 fs-3 text-center display-3">REGISTRO</h2>
 
                 <form class="form-content" [formGroup]="formAuth" (ngSubmit)="registrarse()">
                     <div class="form-group mb-3">
                         <label for="inputName">Nombre</label>
-                        <input type="text" class="form-control" id="inputName">
+                        <input type="text" class="form-control" id="inputName" formControlName="nombre">
                     </div>
                     <div class="form-group mb-3">
                         <label for="inputEmail">Email</label>
-                        <input type="text" class="form-control" id="inputEmail">
+                        <input type="text" class="form-control" id="inputEmail" formControlName="email">
                     </div>
                     <div class="form-group mb-4">
                         <label for="inputPassword">Password</label>
-                        <input type="text" class="form-control" id="inputPassword">
+                        <input type="text" class="form-control" id="inputPassword" formControlName="password">
                     </div>
                     <div class="form-group mb-4">
                         <label for="inputRepitPassword">Repite password</label>
-                        <input type="text" class="form-control" id="inputRepitPassword">
+                        <input type="text" class="form-control" id="inputRepitPassword" formControlName="repitePassword">
                     </div>
                     <div class="form-group d-grid">
                         <input type="submit" value="Registrarme" class="btn btn-primary">

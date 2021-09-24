@@ -5,6 +5,8 @@ import { ListadoEmpleadosComponent } from './pages/listado-empleados/listado-emp
 import { EmpleadoComponent } from './pages/empleado/empleado.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { EmpleadosRoutingModule } from './empleados-routing.module';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 
 
@@ -13,7 +15,9 @@ import { EmpleadosRoutingModule } from './empleados-routing.module';
     HomeComponent,
     ListadoEmpleadosComponent,
     EmpleadoComponent,
-    AgregarComponent
+    AgregarComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
