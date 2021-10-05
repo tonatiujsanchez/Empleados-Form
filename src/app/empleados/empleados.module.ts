@@ -7,6 +7,7 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { EmpleadosRoutingModule } from './empleados-routing.module';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,6 +22,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     EmpleadosRoutingModule
   ]
 })

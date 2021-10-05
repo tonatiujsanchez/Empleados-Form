@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Empleado } from '../../interfaces/empleado.interface';
+import { EmpleadosService } from '../../services/empleados.service';
 
 @Component({
   selector: 'app-listado-empleados',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoEmpleadosComponent implements OnInit {
 
-  constructor() { }
+  empleados: Empleado[] = [];
+
+  constructor(
+    private _empleados: EmpleadosService
+  ) { }
 
   ngOnInit(): void {
+    this._empleados.getEmpleados()
+      .subscribe(
+        resp => this.empleados = resp
+      );
   }
 
 }

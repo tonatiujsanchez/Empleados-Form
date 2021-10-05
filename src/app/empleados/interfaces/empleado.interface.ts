@@ -6,7 +6,7 @@ export interface Empleado{
     edad?: number;
     departamento: depto;
     password: string;
-    foto: string;
+    foto?: string;
 }
 
 export enum depto{
